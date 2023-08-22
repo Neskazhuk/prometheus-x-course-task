@@ -1,8 +1,6 @@
 
-/* Page */
-
 .page-container{
-    height: calc(100vh - 121px);
+    height: calc(100vh - 101px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,33 +47,12 @@
 /* Media */
 
 @media screen and (max-width: 425px) {
-    .logo{
-        justify-content: center;
-    }
-
     .avatar-icon{
         width: 200px;
         height: 200px;
     }
-
-    /* .username-label{
-        font-size: 1.3rem;
-    } */
-
     .username-input,
     .btn.big{
         width: calc(100vw - 16px);
-        margin-top: 6px;
-    }
-}
-
-@media screen and (max-width: 296px) {
-    .logo{
-        font-size: 24px;
-        text-align: center;
-    }
-    
-    .username-label{
-        font-size: 1.2rem;
     }
 }

@@ -2,7 +2,7 @@
 
 .fullcart-container{
     width: 100%;
-    min-height: 480px;
+    min-height: 500px;
     display: flex;
 }
 
@@ -29,6 +29,7 @@ tr{
     border: 2px solid;
     border-radius: 5px;
     padding: 15px;
+    gap: 10px;
 }
 
 .buy{
@@ -51,4 +52,3 @@ figcaption{
     margin-top: 10px;
     padding-inline: 75px;
 }
-

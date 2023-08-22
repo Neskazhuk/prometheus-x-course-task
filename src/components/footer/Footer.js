@@ -1,14 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
         Made in&nbsp;
-      <a href="https://prometheus.org.ua/"
+      <Link to="https://prometheus.org.ua/"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
         Prometheus
-      </a>
+      </Link>
       &nbsp;© 2023
     </footer>
   );

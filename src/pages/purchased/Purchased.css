@@ -1,5 +1,5 @@
 .container{
-    height: calc(100vh - 121px);
+    height: calc(100vh - 101px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,3 +29,8 @@
     font-size: 40px;
 }
 
+@media screen and (max-width: 425px) {
+    .btn.big{
+        width: 100%;
+    }
+}

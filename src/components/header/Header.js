@@ -34,7 +34,7 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <span className="logo">
+        <span className="logo signin-logo">
           <Link to={routes.home}>WHAT-A-BOOK STORE / Serhii Didukh</Link>
         </span>
         <div className="menu">
@@ -44,7 +44,7 @@ function Header() {
                 <img src={cart} alt="Cart" width="40" />
               </Link>
               <Button name="Sign-out" onClick={handleSignOut} />
-              <Link to={routes.home}>
+              <Link to={routes.booklist}>
                 <img src={ava} alt="User avatar" width="40" />
               </Link>
               <p className="username">{username}</p>
