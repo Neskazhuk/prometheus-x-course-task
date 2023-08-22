@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { UserProvider } from 'UserContext';
 import { AuthProvider } from 'AuthContext';
 import { BookProvider } from 'BookContext';
@@ -8,19 +8,19 @@ import './App.css';
 
 function App() {
   return (
-      <div className="App">
-        <AuthProvider>
-          <CartProvider>
-            <UserProvider>
-              <BrowserRouter>
-                <BookProvider>
-                    <AppRoutes />
-                </BookProvider>
-              </BrowserRouter>
-            </UserProvider>
-          </CartProvider>
-        </AuthProvider>
-      </div>
+    <div className="App">
+      <AuthProvider>
+        <CartProvider>
+          <UserProvider>
+            <HashRouter>
+              <BookProvider>
+                <AppRoutes />
+              </BookProvider>
+            </HashRouter>
+          </UserProvider>
+        </CartProvider>
+      </AuthProvider>
+    </div>
   );
 }
 
