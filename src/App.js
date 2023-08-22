@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
+import { UserProvider } from 'UserContext';
+import { AuthProvider } from 'AuthContext';
+import { BookProvider } from 'BookContext';
+import { CartProvider } from 'CartContext';
+import AppRoutes from 'routing/AppRoutes';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <AuthProvider>
+          <CartProvider>
+            <UserProvider>
+              <BrowserRouter>
+                <BookProvider>
+                    <AppRoutes />
+                </BookProvider>
+              </BrowserRouter>
+            </UserProvider>
+          </CartProvider>
+        </AuthProvider>
+      </div>
   );
 }
 

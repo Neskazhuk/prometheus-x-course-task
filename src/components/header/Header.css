@@ -1,0 +1,56 @@
+/* HEADER */
+
+.header-container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding-inline: 10px;
+}
+
+.logo{
+    display: flex;
+    height: inherit;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.menu{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.cart-icon,
+.avatar-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 562px) {
+
+    .logo{
+        font-size: 24px;
+        line-height: 90%;
+    }
+
+    .menu .btn{
+        height: 36px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 394px) {
+
+    /* .logo{
+        font-size: 20px;
+        width: 40%;
+    } */
+}

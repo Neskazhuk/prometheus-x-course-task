@@ -1,0 +1,37 @@
+.btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-block: 5px;
+    padding-inline: 15px;
+    margin-bottom: 8px;
+    
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #fff 3px 3px 0 0, #000 3px 3px 0 1px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn.big {
+    width: 200px;
+    margin-top: 8px;
+    padding-block: 5px;
+    justify-content: center;
+}
+
+.btn.add{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.btn:hover{
+    background-color: violet;
+}
+
+.btn:active{
+    transform: translate(3px, 3px);
+    box-shadow: #fff 1px 1px 0 0, #000 1px 1px 0 1px;
+}

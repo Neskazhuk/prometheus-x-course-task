@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* THE BASE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Bebas Neue';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .App {
+    font-size: 18px;
+} */
+
+*::selection{
+    color:white;
+    background-color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:visited:not(.btn){
+    color:black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track{
+	border: 1px solid black;
+	background-color: #F5F5F5;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar{
+  width: .5em;
+  background-color: #F5F5F5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb{
+	background-color: #000000;
 }
