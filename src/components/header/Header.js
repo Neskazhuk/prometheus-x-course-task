@@ -34,7 +34,7 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <span className="logo signin-logo">
+        <span className="logo">
           <Link to={routes.home}>WHAT-A-BOOK STORE / Serhii Didukh</Link>
         </span>
         <div className="menu">
